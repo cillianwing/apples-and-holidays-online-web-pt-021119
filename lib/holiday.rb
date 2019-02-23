@@ -99,7 +99,8 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   holiday_hash.each do |season, holidays|
     holidays.each do |holidays, supplies|
-      if season == :winter
+      if season == :winter || season == :summer 
+        puts "#{season.to_s."
       end
     end
   end
