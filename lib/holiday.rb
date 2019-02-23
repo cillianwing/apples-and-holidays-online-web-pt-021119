@@ -22,7 +22,7 @@ def second_supply_for_fourth_of_july(holiday_hash)
   holiday_hash.each do |season, holidays|
     holidays.each do |holiday, supplies|
       if holiday == :fourth_of_july 
-        return holiday
+        return supplies[1]
       end 
     end 
   end
