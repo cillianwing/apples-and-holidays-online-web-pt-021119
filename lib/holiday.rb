@@ -100,8 +100,6 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, holidays|
     holidays.each do |holidays, supplies|
       if season == :winter
-        puts "Winter:"
-        puts "#{holidays.upcase}: "
   
 
 end
@@ -109,6 +107,14 @@ end
 def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
   # include the string "BBQ"
+  final_array = []
+  holiday_hash.each do |seasons, holidays|
+    holidays.each do |holiday, supplies|
+      if supplies.include?("BBQ")
+        final_array << :holiday
+      end
+    end
+  end
 
 end
 
