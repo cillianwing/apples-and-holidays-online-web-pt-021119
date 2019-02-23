@@ -100,6 +100,9 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, holidays|
     holidays.each do |holidays, supplies|
       if season == :winter
+      end
+    end
+  end
   
 
 end
